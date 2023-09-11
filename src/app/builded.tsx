@@ -9,9 +9,9 @@ export async function Builded({ url }: { url: string }) {
         <>
             <h3> Builded Puppi Picture </h3>
             <p>
-                this picture of a puppi was loaded from the api during the uild
-                time and used in this component. This will stay the same for all
-                clients and is not daynamic in any way. It is considered static
+                This picture of a puppy was loaded from the API during the build
+                time and is used in this component. It remains the same for all
+                clients and is not dynamic in any way, meaning it is static.
             </p>
             <img
                 alt="puppi image dynamic"

@@ -10,15 +10,16 @@ export async function Dynamic_on_Server({ url }: { url: string }) {
         <>
             <h3> Dynamic Puppi Picture </h3>
             <p>
-                this ppicture of a puppi was dynamically fetched on the server
-                when a client made a request to the server. The server caches
-                this request by default and needs to be told when to revalidate
-                this data. The default is 5 minutes I think. This means that
-                every 5 minutes apart clients would get a different puppi. We
-                can alter this behaviour for example inf forcing the fetch api
-                to not use the cache and rerun the api call on each client
-                request. This would mean that on every request there would be
-                another puppi.
+                This picture of a puppy is dynamically fetched from the server
+                when a client makes a request. By default, the server caches
+                this request and needs to be instructedif it shoud revalidate
+                this data; the default is to not revalidate. If we would set a
+                revalidation to 5 Minutes, this means that every 5 minutes,
+                different clients will receive a different image of a puppy.
+                This behavior can be altered; for instance, by instructing the
+                fetch API not to use the cache and to rerun the API call with
+                each client request, ensuring that each request retrieves a new
+                image of a puppy.
             </p>
             <img
                 alt="puppi image dynamic"

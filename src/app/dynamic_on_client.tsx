@@ -39,17 +39,18 @@ export function Dynamic_on_Client({ url }: { url: string }) {
         <>
             <h3> Client Side Puppi Picture </h3>
             <p>
-                Usually each component which is marked as &lsquo;use
-                client&lsquo; runs once on the server and then again on the
-                client. This is Usually because we want to provide the user with
-                something other than an empty component or all the work left to
-                do on the client side. In this case though we want to show that
-                the picture is fully loaded from the client.
-                <br /> <br />
-                To make this point clear, we will wrap the api call into a
-                useEffect (which only runs on the client) and then add a timer
-                in addition to show that the image loads after the component
-                mounts and dynamically updates the client.
+                Usually, a component marked as &lsquo;use client&lsquo; runs
+                initially on the server and then again on the client. This is
+                typically done to prevent presenting the user with an empty
+                component or leaving all tasks to be completed on the client
+                side. However, in this case, we want to demonstrate that the
+                picture is fully loaded from the client.
+                <br />
+                <br />
+                To highlight this, we will enclose the API call in a useEffect
+                hook (which only operates on the client), and add a timer to
+                show that the image is loaded after the component mounts,
+                dynamically updating on the client side.
             </p>
             {display}
         </>
