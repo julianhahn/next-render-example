@@ -13,7 +13,7 @@ export function Dynamic_on_Client({ url }: { url: string }) {
             const image_data = await fetch(image_url.message)
             const buffer = await image_data.arrayBuffer()
             const imageBase64 = Buffer.from(buffer).toString('base64')
-            /*  set_image_data(imageBase64) */
+            set_image_data(imageBase64)
         }, 1000)
     }
 
